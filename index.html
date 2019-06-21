@@ -20,7 +20,8 @@
                 <div class="logo_container"><img  src="img/rabbit.png" width="120" height="120" alt=""></div>
             </div>
             <div class="form__container field">
-                <input class="field__input field__input--round" name="phone" autocomplete="username"  placeholder="Номер телефона" mask="+{7} ( 000 ) 000-00-00" type="text" pattern="\+?\d{1}\s[\(]\s\d{3}\s[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" required >
+                 <!-- использовал бы кастомный атрибут для маски, но тогда про валидность html можно забыть -->
+                <input class="field__input field__input--round" name="phone" autocomplete="username"  placeholder="Номер телефона" dirname="+{7} ( 000 ) 000-00-00" type="text" pattern="\+?\d{1}\s[\(]\s\d{3}\s[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" required >
             </div>
             <div class="form__container field">
                 <input class="field__input field__input--round" name="password" autocomplete="current-password" placeholder="Пароль" type="password" minlength="5" required  >
